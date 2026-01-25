@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+  .titleContainer {
+    flex: 0.8;
+    text-align: right;
+    padding-top: 1rem;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .titleContainer h2 {
+    font-size: 2.4rem;
+    color: #000000;
+    font-weight: light;
+  }
+
+  .titleContainer h3 {
+    font-size: 1.5rem;
+    color: #000000;
+  }
+
+  .navContainer {
+    flex: 1;
+    }
+
+  .titleContainer h3 {
+    font-size: 1.5rem;
+    }
+  
+  .navContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color: #343a40;
+    padding: 20px 40px;
+    border-radius: 30px;
+  }
+  
+  .navList a {
+    text-decoration: none;
+    color: #f8f9fa;
+    font-size: 1.2rem;
+  }
