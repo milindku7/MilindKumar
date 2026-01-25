@@ -1,6 +1,24 @@
 import styles from "./Navbar.module.css";
+import * as React from "react";
 
-export const Navbar = () => {
+const SVGComponent: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1200 500"
+    preserveAspectRatio="none"
+    width="100%"
+    height="100%"
+    {...props}
+  >
+    <path
+      d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+      className={styles.shapeFill}
+    />
+  </svg>
+);
+
+export const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.titleContainer}>
@@ -9,12 +27,14 @@ export const Navbar = () => {
         <h3>Software Developer, UI/UX Designer, Database and AI/ML Engineer</h3>
       </div>
       <div className={styles.navContainer}>          
-
-        <ul className={styles.navList}>
+        <div className={styles.customShapeDividerTop1769302828}>
+          <SVGComponent className={styles.svg}/>
+        </div>
+        {/* <ul className={styles.navList}>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );
