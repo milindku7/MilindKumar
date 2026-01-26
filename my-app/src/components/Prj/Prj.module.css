@@ -1,0 +1,140 @@
+.container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	gap: 1.25rem;
+	padding: 0rem;
+  background-color: #ffa000;
+  margin: 0rem;
+  flex-wrap: wrap;
+}
+
+.divider {
+	width: 100%;
+	background-color: #ffa000;
+	position: relative;
+	margin: 0;
+  flex: 0 0 100%;
+}
+
+.dividerSvg {
+	display: block;
+	width: 100%;
+	height: 80px;
+	max-height: 80px;
+}
+
+.left {
+	flex: 1 1 auto;
+	text-align: left;
+  margin-left: 20rem;
+}
+
+.year {
+	font-weight: 500;
+	color: #f8f8ff;
+	font-size: 1rem;
+	margin-bottom: 0.125rem;
+}
+
+.title {
+	font-size: 3rem;
+	font-weight: 1000;
+	color: #000000;
+	margin-bottom: 0.5rem;
+}
+
+.desc {
+	margin: 0;
+	color: #333;
+	line-height: 1.45;
+}
+
+.right {
+	flex: 0 0 260px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.collage {
+	position: relative;
+	width: 220px;
+	height: 160px;
+}
+
+.polaroid {
+	position: absolute;
+	background: #fff;
+	padding: 10px 10px 18px;
+	box-shadow: 0 8px 20px rgba(20, 20, 20, 0.12);
+	border-radius: 6px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.polaroid img,
+.polaroid video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.p1 {
+	width: 120px;
+	height: 120px;
+	top: 0;
+	left: 0;
+	transform: rotate(-8deg);
+	z-index: 3;
+}
+
+.p2 {
+	width: 110px;
+	height: 110px;
+	top: 18px;
+	left: 70px;
+	transform: rotate(10deg);
+	z-index: 4;
+}
+
+.p3 {
+	width: 140px;
+	height: 90px;
+	top: 60px;
+	left: 40px;
+	transform: rotate(-4deg);
+	z-index: 2;
+}
+
+.placeholder {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, #f6f6f6, #efefef);
+	color: #9b9b9b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+	.container {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.75rem;
+	}
+
+	.right {
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	.collage {
+		transform: scale(0.95);
+	}
+}

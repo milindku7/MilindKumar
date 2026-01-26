@@ -1,6 +1,18 @@
 import styles from './Projects.module.css';
+import Prj from '../Prj/Prj';
 
-const projects = [
+type Project = {
+  id: number;
+  name: string;
+  description: string;
+  html_url: string;
+  year?: number | string;
+  img1?: string;
+  img2?: string;
+  videoSrc?: string;
+};
+
+const projects: Project[] = [
   {
     id: 1,
     name: 'Project 1',
@@ -39,18 +51,42 @@ const projects = [
   },
 ];
 
+// Distinct background colors for each project card
+const projectBgColors: string[] = [
+  '#FF6B6B', // Red-ish
+  '#4ECDC4', // Teal
+  '#FFD93D', // Yellow
+  '#6C5CE7', // Purple
+  '#00C853', // Green
+  '#FF7043', // Orange
+];
+
 const Projects = () => {
   return (
-    <section id="projects" className={styles.projects}>
-      <h2>My Projects</h2>
+    <section id="projects" className={styles.projects} aria-labelledby="projects-title">
+      <div className={styles.waveHeader}>
+        <svg className={styles.waveSvg} viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,64L48,96C96,128,192,192,288,186.7C384,181,480,107,576,101.3C672,96,768,160,864,176C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" fill="#ffffff" />
+        </svg>
+        <h2 id="projects-title" className={styles.waveTitle}>Projects</h2>
+      </div>
+
+      <div className={styles.sectionHeader}>
+        <h1>Projects</h1>
+      </div>
+
       <div className={styles.projectGrid}>
         {projects.map(project => (
           <div key={project.id} className={styles.projectCard}>
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-              View Project
-            </a>
+            <Prj
+              year={project.year ?? '2000'}
+              title={project.name}
+              description={project.description}
+              img1={project.img1}
+              img2={project.img2}
+              videoSrc={project.videoSrc}
+              bgColor={projectBgColors[(project.id - 1) % projectBgColors.length]}
+            />
           </div>
         ))}
       </div>

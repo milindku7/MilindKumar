@@ -1,32 +1,56 @@
 .projects {
-  padding: 5rem;
   background-color: #ffffff;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .projects h2 {
+  display: none;
+}
+
+.waveHeader {
+  position: relative;
+  background-color: #ffa000;
+  width: 100%;
+}
+
+.waveSvg {
+  display: block;
+  width: 100%;
+  max-height: 120px;
+  height: 120px;
+  position: relative;
+  top: -2.5rem;
+}
+
+.waveTitle {
+  background-color: #ffa000 ;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 3rem;
-  margin-bottom: 3rem;
-    color: #000000;
+  margin: 0;
+  color: #ffffff;
+  padding: 0 1rem;
+  line-height: 1;
 }
 
 .projectGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr; /* Ensure each project starts on a new line */
   gap: 2rem;
+  padding-top: 2rem;
+  background-color: #ffa000;
 }
 
 .projectCard {
   background-color: #f4f4f4;
-  padding: 2rem;
+  padding: 0rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   text-align: left;
-}
-
-.projectCard:hover {
-  transform: translateY(-10px);
 }
 
 .projectCard h3 {
@@ -47,6 +71,15 @@
   font-weight: bold;
 }
 
-.projectCard a:hover {
-  text-decoration: underline;
+.sectionHeader {
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #ffa000;
+  text-align: start;
+}
+ 
+.sectionHeader h1 {
+  margin: 0;
+  padding: 3rem;
+  padding-top: 0rem;
 }

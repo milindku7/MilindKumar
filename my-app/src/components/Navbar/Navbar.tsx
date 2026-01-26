@@ -1,40 +1,61 @@
 import styles from "./Navbar.module.css";
 import * as React from "react";
 
-const SVGComponent: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg
-    data-name="Layer 1"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1200 500"
-    preserveAspectRatio="none"
-    width="100%"
-    height="100%"
-    {...props}
-  >
-    <path
-      d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-      className={styles.shapeFill}
-    />
-  </svg>
-);
+const HeaderCurve = ({ className = "" }) => {
+  return (
+    <div
+      className={className}
+      style={{ position: 'relative', width: '100%', overflow: 'hidden', height: '300px' }}
+    >
+      <svg
+        viewBox="0 0 1440 320"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+      >
+        <path
+          d="M0,0 L1440,0 L1440,170 C100,360 500,80 0,0 Z"
+          fill="orange"
+          stroke="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          display: 'flex',
+          alignItems: 'start',
+          justifyContent: 'right',
+          pointerEvents: 'auto',
+          paddingTop: '2rem',
+          paddingRight: '2rem',
+          gap: '0.5rem'
+        }}
+      >
+        <nav aria-label="Header links" style={{display: 'flex', gap: '0.5rem'}}>
+          <a href="#awards" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>Awards</a>
+          <a href="#experience" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>Experience</a>
+          <a href="#projects" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>Projects</a>
+          <a href="#contact" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>Contact</a>
+          <a href="#about" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>About</a>
+        </nav>
+      </div>
+    </div>
+  );
+};
 
 export const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.titleContainer}>
-        <h1 className={styles.title}>Hi, My name is Milind Kumar</h1>
-        <h2>University at Buffalo, Computer Science (BS)</h2>
-        <h3>Software Developer, UI/UX Designer, Database and AI/ML Engineer</h3>
+        <h1 className={`${styles.title} ${styles.fadeUp} ${styles.delay1}`}>Hi, My name is Milind Kumar</h1>
+        <h2 className={`${styles.fadeUp} ${styles.delay2}`}>University at Buffalo, Computer Science (BS)</h2>
+        <h3 className={`${styles.fadeUp} ${styles.delay3}`}>Software Developer, UI/UX Designer, Database and AI/ML Engineer</h3>
       </div>
-      <div className={styles.navContainer}>          
-        <div className={styles.customShapeDividerTop1769302828}>
-          <SVGComponent className={styles.svg}/>
-        </div>
-        {/* <ul className={styles.navList}>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul> */}
+      <div className={styles.navContainer}>
+        <HeaderCurve />
       </div>
     </nav>
   );
