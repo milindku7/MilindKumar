@@ -40,7 +40,6 @@
 .projectGrid {
   display: grid;
   grid-template-columns: 1fr; /* Ensure each project starts on a new line */
-  gap: 2rem;
   padding-top: 2rem;
   background-color: #ffa000;
 }
@@ -72,7 +71,7 @@
 }
 
 .sectionHeader {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #ffffff;
   background-color: #ffa000;
   text-align: start;
@@ -80,6 +79,7 @@
  
 .sectionHeader h1 {
   margin: 0;
-  padding: 3rem;
-  padding-top: 0rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-left: 10rem;
 }
