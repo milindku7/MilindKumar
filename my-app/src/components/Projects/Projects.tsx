@@ -73,14 +73,16 @@ As the lead on the frontend, I took ownership of the UI, turning concepts into a
     {
     id: 5,
     name: 'Ascenture: An Adventure Based, Mountain Climbing Game',
-    description: 'This is a description for project 5.',
+    description: `In this Unreal Engine puzzle adventure, size really matters!
+    
+    You play as a mouse and a dragon who must team up to climb a mysterious mountain. You’ll need the mouse’s agility and the dragon’s strength to clear the path ahead. I built this using a mix of C++ and Blueprints to create smooth character switching and dynamic puzzle mechanics. It’s a fun test of logic and teamwork.`,
     html_url: '#',
     year: 'Spring 2025',
     yearEnd: '',
     titleColor: '#000',
     descColor: '#333333',
     yearColor: '#333333',
-    toolsUsed: 'Tech Stack 5',
+    toolsUsed: 'C++, Unreal Engine, Blueprints',
   },
     {
     id: 6,

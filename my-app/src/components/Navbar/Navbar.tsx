@@ -34,12 +34,12 @@ const HeaderCurve = ({ className = "" }) => {
           gap: '0.5rem'
         }}
       >
-        <nav aria-label="Header links" style={{display: 'flex', gap: '0.5rem'}}>
-          <a href="#awards" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>Awards</a>
-          <a href="#experience" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>Experience</a>
-          <a href="#projects" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>Projects</a>
-          <a href="#contact" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>Contact</a>
-          <a href="#about" style={{ color: '#fff', fontSize: '1.7rem', margin: 0, padding: '0 1rem', textDecoration: 'none', fontWeight: 'bold'}}>About</a>
+        <nav aria-label="Header links" style={{ display: "flex", gap: "0.5rem" }}>
+          <a href="#awards" className={styles.headerLink}>Awards</a>
+          <a href="#experience" className={styles.headerLink}>Experience</a>
+          <a href="#projects" className={styles.headerLink}>Projects</a>
+          <a href="#contact" className={styles.headerLink}>Contact</a>
+          <a href="#about" className={styles.headerLink}>About</a>
         </nav>
       </div>
     </div>

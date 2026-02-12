@@ -15,7 +15,7 @@
   }
   
   .title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #000000;
     margin-bottom: 1rem;
@@ -31,14 +31,14 @@
   }
 
   .titleContainer h2 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color: #000000;
     font-weight: light;
     margin-bottom: 1rem;
   }
 
   .titleContainer h3 {
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: #000000;
     margin-bottom: 1rem;
   }
@@ -62,6 +62,21 @@
     text-decoration: none;
     color: #f8f9fa;
     font-size: 1.2rem;
+  }
+
+  .headerLink {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  @media (min-width: 1200px) {
+    .headerLink {
+      padding-left: 1rem;
+    }
   }
 
   /* Animation: slide up + fade in */
