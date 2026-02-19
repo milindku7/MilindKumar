@@ -1,0 +1,83 @@
+.experience {
+  background-color: #ffa000;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience h2 {
+  display: none;
+}
+
+.waveHeader {
+  position: relative;
+  background-color: #ffa000;
+  width: 100%;
+}
+
+.waveSvg {
+  display: block;
+  width: 100%;
+  max-height: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.waveTitle {
+  background-color: #ffa000;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  margin: 0;
+  color: #ffffff;
+  padding: 0 1rem;
+  line-height: 1;
+}
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffa000;
+}
+
+.experienceCard {
+  background-color: #f4f4f4;
+  padding: 0rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.experienceCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+    color: #000000;
+}
+
+.experienceCard p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.experienceCard a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sectionHeader {
+  font-size: 1.7rem;
+  color: #ffffff;
+  background-color: #ffa000;
+  text-align: end; /* Flipped alignment -> end (right) */
+  padding-top: 2rem;
+  padding-right: 10rem;
+  padding-bottom: 3rem;
+}
+ 
+.sectionHeader h1 {
+  margin: 0;
+}

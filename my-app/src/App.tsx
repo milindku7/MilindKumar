@@ -1,6 +1,7 @@
 import { Navbar } from './components/Navbar/Navbar';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
+import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <main>
         <Projects />
+        <Experience />
         <Contact />
         <About />
       </main>

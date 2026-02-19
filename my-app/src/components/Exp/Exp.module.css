@@ -16,10 +16,12 @@
 	padding: 1rem 0;
 }
 
-.left {
+/* Original .left was text. Now text is on right side */
+.textSide {
 	flex: 1;
-	text-align: left;
-    margin-left: 10vw;
+	text-align: left; /* Keep text left aligned for readability usually, or maybe right? let's stick to left for now unless "flipped" implies text-align too */
+    margin-right: 10vw; /* Flipped margin */
+    margin-left: 2rem;
     max-width: 50vw;
 }
 
@@ -50,7 +52,7 @@
 	margin-top: 1rem;
 	color: #333;
 	line-height: 1.6;
-    font-size: 3rem;
+    font-size: 3rem; /* Seems large in original, keeping it */
 }
 
 .divider {
@@ -67,15 +69,15 @@
     min-height: 50px;
 }
 
-/* Right Section Styles */
-.right {
+/* Original .right was media. Now media is on the left side */
+.mediaSide {
 	display: flex;
 	gap: 1.5rem;
 	align-items: center;
-	margin-right: 5vw;
-    justify-content: flex-end;
+	margin-left: 5vw; /* Flipped margin */
+    justify-content: flex-start; /* Flipped alignment */
 	height: fit-content;
-	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 .frame {
@@ -156,13 +158,13 @@
 
 @media (max-width: 900px) {
 	.contentWrapper {
-		flex-direction: column;
+		flex-direction: column-reverse; /* Flip stacking order on mobile too? */
 		align-items: center;
         text-align: center;
         padding-bottom: 0;
 	}
 
-    .left {
+    .textSide {
         margin-left: 0;
         margin-right: 0;
         max-width: 80%;
@@ -170,10 +172,11 @@
         text-align: center;
     }
 
-	.right { 
+	.mediaSide { 
         width: 100%;
         justify-content: center;
-        margin-right: 0;
+        margin-left: 0;
         margin-bottom: 2rem;
+        padding-right: 0;
     }
 }

@@ -18,7 +18,7 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    name: 'Customer Atlas: A Custom CRM System for Research',
+    name: 'Customer Atlas: A CRM for Research',
     description: `A market intelligence platform designed to visualize global customer engagement, currently in use by the University at Buffalo to analyze market fit for its AI-driven products (SATE, AudioSight, mRehab)
 
     My main focus was architecting a robust backend on Supabase to ingest and process geographically distributed user data. To make that data actually useful, I integrated generative AI via OpenRouter to automatically analyze sentiment and spot emerging trends. On the front end, we built an interactive React dashboard that turns that complex data into a live, navigable global map—giving the university a clear picture of their product-market fit.`,
@@ -86,15 +86,20 @@ As the lead on the frontend, I took ownership of the UI, turning concepts into a
   },
     {
     id: 6,
-    name: 'Project 6',
-    description: 'This is a description for project 6.',
+    name: 'Calloc, Malloc and Realloc: A Custom Memory Allocator',
+    description: `A personalized implementation of Calloc, Malloc and Realloc.
+    
+    Calls sbrk to get the address of a void pointer that provides 4096 bytes of space in the heap. It then breaks down the bytes into a free list that contains void pointers containing addresses to different-sized blocks.
+    
+    Based on the number of bytes needed by either of the commands, the code allots the closest 2^n bytes to it.
+`,
     html_url: '#',
-    year: '2024',
+    year: 'Fall 2023',
     yearEnd: '',
     titleColor: '#fff',
     descColor: '#f0f0f0',
     yearColor: '#f0f0f0',
-    toolsUsed: 'Tech Stack 6',
+    toolsUsed: 'C, Linux System Programming',
   },
 ];
 
