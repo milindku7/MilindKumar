@@ -19,8 +19,8 @@
 .left {
 	flex: 1;
 	text-align: left;
-    margin-left: 10vw;
-    max-width: 50vw;
+	margin-left: 10vw;
+	max-width: 50vw;
 }
 
 .year {
@@ -31,40 +31,40 @@
 }
 
 .title {
-	font-size: 3rem;
+	font-size: 1.7rem;
 	font-weight: 1000;
 	color: #000000;
 	margin-bottom: 1rem;
-    line-height: 1.1;
+	line-height: 1.1;
 }
 
 .desc {
 	margin: 0;
 	color: #333;
 	line-height: 1.6;
-    font-size: 1.1rem;
-    white-space: pre-line;
+	font-size: 1.1rem;
+	white-space: pre-line;
 }
 
 .tools {
 	margin-top: 1rem;
 	color: #333;
 	line-height: 1.6;
-    font-size: 3rem;
+	font-size: 1rem;
 }
 
 .divider {
 	width: 100%;
 	background-color: transparent;
 	line-height: 0;
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 .dividerSvg {
 	display: block;
 	width: 100%;
 	height: auto;
-    min-height: 50px;
+	min-height: 50px;
 }
 
 /* Right Section Styles */
@@ -73,7 +73,7 @@
 	gap: 1.5rem;
 	align-items: center;
 	margin-right: 5vw;
-    justify-content: flex-end;
+	justify-content: flex-end;
 	height: fit-content;
 	padding-left: 2rem;
 }
@@ -81,13 +81,12 @@
 .frame {
 	width: 15vw;
 	height: 15vw;
-    max-width: 200px;
-    max-height: 200px;
-    min-width: 120px;
-    min-height: 120px;
+	max-width: 200px;
+	max-height: 200px;
+	min-width: 120px;
+	min-height: 120px;
 	background-color: #333;
 	border: 4px solid #fff;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 	border-radius: 12px;
 	display: flex;
 	align-items: center;
@@ -98,37 +97,37 @@
 
 /* Modern styling touches */
 .videoFrame {
-    background: linear-gradient(135deg, #444, #222);
-    position: relative;
-    cursor: pointer;
+	background: linear-gradient(135deg, #444, #222);
+	position: relative;
+	cursor: pointer;
 }
 
 .videoFrame::after {
-    /* Play icon simulation */
-    content: '▶'; 
-    color: rgba(255,255,255,0.7);
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	/* Play icon simulation */
+	content: '▶';
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 2rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .pictureFrame {
-    background: linear-gradient(135deg, #ddd, #bbb);
-    color: #333;
-    font-weight: bold;
+	background: linear-gradient(135deg, #ddd, #bbb);
+	color: #333;
+	font-weight: bold;
 }
 
 .placeholder {
-    color: #fff;
-    font-size: 0.8rem;
-    text-align: center;
-    width: 100%;
+	color: #fff;
+	font-size: 0.8rem;
+	text-align: center;
+	width: 100%;
 }
 
 .pictureFrame .placeholder {
-    color: #333;
+	color: #333;
 }
 
 /* Tilts */
@@ -139,41 +138,41 @@
 
 .tilted2 {
 	transform: rotate(2deg) translateY(-10px);
-    z-index: 2;
+	z-index: 2;
 	margin-top: 8rem;
 }
 
 .tilted3 {
 	transform: rotate(-4deg);
-    z-index: 1;
+	z-index: 1;
 	margin-top: 0rem;
 }
 
 .frame:hover {
-    transform: scale(1.05) rotate(0deg);
-    z-index: 10;
+	transform: scale(1.05) rotate(0deg);
+	z-index: 10;
 }
 
 @media (max-width: 900px) {
 	.contentWrapper {
 		flex-direction: column;
 		align-items: center;
-        text-align: center;
-        padding-bottom: 0;
+		text-align: center;
+		padding-bottom: 0;
 	}
 
-    .left {
-        margin-left: 0;
-        margin-right: 0;
-        max-width: 80%;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
+	.left {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 80%;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
 
-	.right { 
-        width: 100%;
-        justify-content: center;
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
+	.right {
+		width: 100%;
+		justify-content: center;
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
 }

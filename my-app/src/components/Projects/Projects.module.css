@@ -25,7 +25,7 @@
 }
 
 .waveTitle {
-  background-color: #ffa000 ;
+  background-color: #ffa000;
   position: absolute;
   top: 16px;
   left: 50%;
@@ -39,7 +39,8 @@
 
 .projectGrid {
   display: grid;
-  grid-template-columns: 1fr; /* Ensure each project starts on a new line */
+  grid-template-columns: 1fr;
+  /* Ensure each project starts on a new line */
   padding-top: 2rem;
   background-color: #ffa000;
 }
@@ -55,13 +56,13 @@
 .projectCard h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-    color: #000000;
+  color: #000000;
 }
 
 .projectCard p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
-    color: #000000;
+  color: #000000;
 }
 
 .projectCard a {
@@ -76,10 +77,11 @@
   background-color: #ffa000;
   text-align: start;
 }
- 
+
 .sectionHeader h1 {
   margin: 0;
   padding: 1rem;
   padding-top: 2rem;
   padding-left: 10rem;
+  font-size: 2.4rem;
 }

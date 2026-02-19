@@ -8,27 +8,27 @@ type PrjProps = {
 	img1?: string
 	img2?: string
 	videoSrc?: string
-  bgColor?: string
-  dividerColor?: string
-  titleColor?: string
-  descColor?: string
-  yearColor?: string
+	bgColor?: string
+	dividerColor?: string
+	titleColor?: string
+	descColor?: string
+	yearColor?: string
 	toolsUsed?: string
 }
 
-const Prj: React.FC<PrjProps> = ({ 
-  year, 
-  title, 
-  description, 
-  img1, 
-  img2, 
-  videoSrc, 
-  bgColor, 
-  dividerColor, 
-  titleColor, 
-  descColor, 
-  yearColor,
-  toolsUsed
+const Prj: React.FC<PrjProps> = ({
+	year,
+	title,
+	description,
+	img1,
+	img2,
+	videoSrc,
+	bgColor,
+	dividerColor,
+	titleColor,
+	descColor,
+	yearColor,
+	toolsUsed
 }) => {
 	const WAVE_PATHS = [
 		"M0,64L48,96C96,128,192,192,288,186.7C384,181,480,107,576,101.3C672,96,768,160,864,176C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z",

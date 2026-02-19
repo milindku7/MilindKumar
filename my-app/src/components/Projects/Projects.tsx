@@ -119,7 +119,7 @@ const dividerColors: string[] = [
   '#808000',
   '#FFDAB9',
   '#2C3E50',
-  'orange',
+  '#ffa000',
 ];
 
 const Projects = () => {
