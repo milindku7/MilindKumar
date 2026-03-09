@@ -1,3 +1,10 @@
+  .headerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    align-items: center;
+    margin-left: auto;
+  }
 .navbar {
     display: flex;
     justify-content: space-between;

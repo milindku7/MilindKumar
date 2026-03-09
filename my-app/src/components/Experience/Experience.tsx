@@ -12,51 +12,54 @@ type Experience = {
   titleColor?: string;
   descColor?: string;
   yearColor?: string;
-  toolsUsed?: string;
 };
 
 const experiences: Experience[] = [
   {
     id: 1,
-    role: 'Software Engineering Intern',
-    company: 'Tech Corp',
-    description: `Worked on the backend infrastructure to support high-scale data processing.
-    
-    Optimized database queries and implemented caching strategies that reduced latency by 40%. Collaborated with the frontend team to integrate new API endpoints for the user dashboard.`,
-    year: 'Summer 2025',
+    role: 'Research Assistant',
+    company: 'State University of New York at Buffalo',
+    description: `Engineered Customer Atlas, a full-stack application using React and PostgreSQL to streamline data collection processes, collaborating within a 4-person team under the supervision of Professor Wenyao Xu.
+
+    Deployed the solution for institutional use at the University at Buffalo, enabling the active tracking of customer interest metrics and the projection of potential revenue
+
+    Awarded 2nd Place at the UB CSE Demo Day, recognized for technical execution and the successful delivery of a practical, high-impact research tool
+`,
+    year: 'August 2025 to December 2025',
     yearEnd: '',
     titleColor: '#000',
     descColor: '#333333',
     yearColor: '#333333',
-    toolsUsed: 'Python, Django, PostgreSQL, Redis',
   },
   {
     id: 2,
-    role: 'Research Assistant',
-    company: 'University Lab',
-    description: `Conducted research on machine learning algorithms for pattern recognition in medical imaging.
+    role: 'International Admissions Ambassador - GloBull Leader',
+    company: 'State University of New York at Buffalo',
+    description: `Developed a Python scheduling algorithm to automate and optimize shift assignments for a team of 18 ambassadors
     
-    Developed a Python-based pipeline to preprocess and analyze large datasets of MRI scans. Published findings in a student research journal.`,
-    year: '2024',
-    yearEnd: 'Present',
+    Directed content strategy and community management for UB International Admissions social media platforms, engaging thousands of prospective students globally
+
+    Recruited and trained a cohort of 8 new ambassadors, equipping them with knowledge to support prospective students
+`,
+    year: 'March 2023 to Present',
+    yearEnd: '',
     titleColor: '#fff',
     descColor: '#f0f0f0',
     yearColor: '#f0f0f0',
-    toolsUsed: 'Python, PyTorch, NumPy, Pandas',
   },
     {
     id: 3,
-    role: 'Web Developer',
-    company: 'Freelance',
-    description: `Designed and built custom websites for local businesses.
+    role: 'STEM Exploration Field Trips Volunteer',
+    company: 'State University of New York at Buffalo',
+    description: `Gamified complex scientific topics into engaging mini-games to spark curiosity and promote STEM accessibility for elementary school students
     
-    Managed the full development lifecycle from initial client consultation to deployment and maintenance.`,
-    year: '2023',
-    yearEnd: '2024',
+    Orchestrated and led hands-on educational classes and activities for groups of elementary and middle school students
+    `,
+    year: 'January 2024',
+    yearEnd: '',
     titleColor: '#000',
     descColor: '#333333',
     yearColor: '#333333',
-    toolsUsed: 'React, Node.js, MongoDB',
   },
 ];
 
@@ -65,12 +68,6 @@ const expBgColors: string[] = [
   '#ffa000', // Lavender
   '#2C3E50', // Dark Slate
   '#FFDAB9', // Peach
-];
-
-const dividerColors: string[] = [
-  '#2C3E50',
-  '#FFDAB9',
-  '#E6E6FA',
 ];
 
 const Experience = () => {
@@ -122,7 +119,6 @@ const Experience = () => {
                 titleColor={exp.titleColor}
                 descColor={exp.descColor}
                 yearColor={exp.yearColor}
-                toolsUsed={exp.toolsUsed}
               />
             </div>
           )
@@ -132,4 +128,13 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+
+const ExperienceAndAwards = () => {
+  return (
+    <>
+      <Experience />
+    </>
+  );
+};
+
+export default ExperienceAndAwards;

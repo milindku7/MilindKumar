@@ -34,7 +34,7 @@ const HeaderCurve = ({ className = "" }) => {
           gap: '0.5rem'
         }}
       >
-        <nav aria-label="Header links" style={{ display: "flex", gap: "0.5rem" }}>
+        <nav aria-label="Header links" className={styles.headerLinks}>
           <a href="#awards" className={styles.headerLink}>Awards</a>
           <a href="#experience" className={styles.headerLink}>Experience</a>
           <a href="#projects" className={styles.headerLink}>Projects</a>
