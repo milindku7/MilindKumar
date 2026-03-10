@@ -1,31 +1,72 @@
 .contact {
   padding: 5rem;
-  text-align: center;
-  background-color: #ffffff;
+  text-align: left;
+  background: #ffffff;
 }
 
 .contact h2 {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #000000;
 }
 
 .contact p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
+  color: #253247;
+  max-width: 720px;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contactItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid #c9c9c9;
+  background-color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   color: #000000;
-}
-
-.contactInfo p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.contactInfo a {
-  color: #007bff;
+  font-weight: 600;
   text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.contactInfo a:hover {
-  text-decoration: underline;
+.contactItem svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.contactItem:hover {
+  transform: translateY(-2px);
+  border-color: #000000;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+.contactItem:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .contact {
+    padding: 3.25rem 1.25rem;
+  }
+
+  .contact h2 {
+    font-size: 2.15rem;
+  }
+
+  .contactItem {
+    width: 100%;
+    justify-content: center;
+  }
 }

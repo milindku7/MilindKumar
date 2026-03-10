@@ -13,7 +13,6 @@ type PrjProps = {
 	titleColor?: string
 	descColor?: string
 	yearColor?: string
-	toolsUsed?: string
 }
 
 const Prj: React.FC<PrjProps> = ({
@@ -27,8 +26,7 @@ const Prj: React.FC<PrjProps> = ({
 	dividerColor,
 	titleColor,
 	descColor,
-	yearColor,
-	toolsUsed
+	yearColor
 }) => {
 	const WAVE_PATHS = [
 		"M0,64L48,96C96,128,192,192,288,186.7C384,181,480,107,576,101.3C672,96,768,160,864,176C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z",
@@ -55,11 +53,6 @@ const Prj: React.FC<PrjProps> = ({
 					<div className={styles.year} style={{ color: yearColor }}>{year}</div>
 					<div className={styles.title} style={{ color: titleColor }}>{title}</div>
 					<p className={styles.desc} style={{ color: descColor }}>{description}</p>
-					{toolsUsed && (
-						<p className={styles.tools} style={{ color: descColor }}>
-							<strong><em>Tools used: {toolsUsed}</em></strong>
-						</p>
-					)}
 				</div>
 				<div className={styles.right}>
 					<div className={`${styles.frame} ${styles.videoFrame} ${styles.tilted1}`}>
