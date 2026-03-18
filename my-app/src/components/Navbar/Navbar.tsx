@@ -53,6 +53,14 @@ export const Navbar: React.FC = () => {
         <h1 className={`${styles.title} ${styles.fadeUp} ${styles.delay1}`}>Hi, My name is Milind Kumar</h1>
         <h2 className={`${styles.fadeUp} ${styles.delay2}`}>University at Buffalo, Computer Science (BS)</h2>
         <h3 className={`${styles.fadeUp} ${styles.delay3}`}>Software Developer, UI/UX Designer, Database and AI/ML Engineer</h3>
+        <a
+          href="/media/pdfs/resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className={`${styles.resumeButton} ${styles.fadeUp} ${styles.delay4}`}
+        >
+          Browse my resume
+        </a>
       </div>
       <div className={styles.navContainer}>
         <HeaderCurve />

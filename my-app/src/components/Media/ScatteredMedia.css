@@ -1,0 +1,43 @@
+/* ScatteredMedia.css */
+
+.media-wrapper {
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  border: 8px solid white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* 1. Setup an invisible layer that sits just behind the media. */
+.media-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1; 
+}
+
+/* 2. The Magic: Expands the hit area of the DIV so the mouse doesn't slip off */
+.media-wrapper:hover::before {
+  top: -60px; 
+  left: -60px; 
+  right: -60px; 
+  bottom: -60px;
+}
+
+.media-wrapper:hover {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) scale(1.5) rotate(0deg) !important;
+  z-index: 50 !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5) !important;
+}
+
+.media-wrapper.media-wrapper-no-frame {
+  border: none;
+  box-shadow: none;
+  
+}
+
+.media-wrapper.media-wrapper-no-frame:hover {
+  box-shadow: none !important;
+}

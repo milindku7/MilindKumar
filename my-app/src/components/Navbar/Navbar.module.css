@@ -49,6 +49,30 @@
     color: #000000;
     margin-bottom: 1rem;
   }
+
+  .resumeButton {
+    display: inline-block;
+    margin-top: 0.3rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    background-color: #008080;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+  }
+
+  .resumeButton:hover {
+    background-color: #ffb703;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  .resumeButton:focus-visible {
+    outline: 3px solid #111111;
+    outline-offset: 2px;
+  }
   
   .navContainer {
     flex: 1;
@@ -117,4 +141,8 @@
   }
   .delay3 {
     animation-delay: 300ms;
+  }
+
+  .delay4 {
+    animation-delay: 400ms;
   }

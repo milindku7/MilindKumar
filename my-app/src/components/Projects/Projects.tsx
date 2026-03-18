@@ -6,6 +6,9 @@ type Project = {
   name: string;
   description: string;
   html_url: string;
+  img1?: string;
+  img2?: string;
+  videoSrc?: string;
   year?: number | string;
   yearEnd?: number | string;
   rangeSeparator?: string;
@@ -23,6 +26,9 @@ const projects: Project[] = [
 
     My main focus was architecting a robust backend on Supabase to ingest and process geographically distributed user data. To make that data actually useful, I integrated generative AI via OpenRouter to automatically analyze sentiment and spot emerging trends. On the front end, we built an interactive React dashboard that turns that complex data into a live, navigable global map—giving the university a clear picture of their product-market fit.`,
     html_url: '#',
+    img1: 'http://localhost:8080/api/media/images/Slide1.jpg',
+    img2: 'http://localhost:8080/api/media/images/customeratlas.png',
+    videoSrc: 'https://www.w3schools.com/html/mov_bbb.mp4',
     year: 'Fall 2025',
     yearEnd: '',
     titleColor: '#000',
@@ -37,6 +43,9 @@ const projects: Project[] = [
      By treating the schedule as an algorithmic constraint satisfaction problem (inspired by my work in Algorithms and Complexity), I reduced a manual 4-hour process down to a few seconds.
      The result? 100% shift coverage, zero human errors, and a "fairness" logic that actually respected everyone's preferences.`,
     html_url: '#',
+    img1: 'https://picsum.photos/seed/scheduler-1/300/200',
+    img2: 'http://localhost:8080/api/media/images/schedulingalgo.png',
+    videoSrc: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
     year: 'Side Project',
     yearEnd: '',
     titleColor: '#000',
@@ -51,18 +60,24 @@ const projects: Project[] = [
 
 As the lead on the frontend, I took ownership of the UI, turning concepts into a fully responsive, deployed application. But I didn't stop at the pixels—I also implemented core full-stack features, including a secure JWT authentication flow and a live messaging system. It’s a seamless space where musicians can connect, collaborate, and jam in real-time.`,
     html_url: '#',
+    img1: 'https://picsum.photos/seed/strings-attached-1/300/200',
+    img2: 'http://localhost:8080/api/media/images/stringsattached.png',
+    videoSrc: 'https://www.w3schools.com/html/mov_bbb.mp4',
     year: 'Spring 2025',
     yearEnd: '',
     titleColor: '#fff',
     descColor: '#f0f0f0',
     yearColor: '#f0f0f0',
-    toolsUsed: 'React, JavaScript, FoalTS, Docker',
+    toolsUsed: 'React, JavaScript, FoalTS, Docker, REST APIs',
   },
     {
     id: 4,
     name: 'Milind Kumar Portfolio Website',
     description: `This website is a fully custom full-stack application. I built the frontend with React to ensure a snappy, component-based user experience, while the backend relies on Python Flask to handle the logic and data. It was built from the ground up to serve as both a showcase of my work and a practical demonstration of modern web architecture.`,
     html_url: '#',
+    img1: 'https://picsum.photos/seed/portfolio-1/300/200',
+    img2: 'http://localhost:8080/api/media/images/portfolio.png',
+    videoSrc: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
     year: 'Personal Website',
     yearEnd: '',
     titleColor: '#fff',
@@ -77,6 +92,9 @@ As the lead on the frontend, I took ownership of the UI, turning concepts into a
     
     You play as a mouse and a dragon who must team up to climb a mysterious mountain. You’ll need the mouse’s agility and the dragon’s strength to clear the path ahead. I built this using a mix of C++ and Blueprints to create smooth character switching and dynamic puzzle mechanics. It’s a fun test of logic and teamwork.`,
     html_url: '#',
+    img1: 'https://picsum.photos/seed/ascenture-1/300/200',
+    img2: 'http://localhost:8080/api/media/images/ascenture.png',
+    videoSrc: 'https://www.w3schools.com/html/mov_bbb.mp4',
     year: 'Spring 2025',
     yearEnd: '',
     titleColor: '#000',
@@ -94,6 +112,9 @@ As the lead on the frontend, I took ownership of the UI, turning concepts into a
     Based on the number of bytes needed by either of the commands, the code allots the closest 2^n bytes to it.
 `,
     html_url: '#',
+    img1: 'https://picsum.photos/seed/memory-allocator-1/300/200',
+    img2: 'http://localhost:8080/api/media/images/calloc.png',
+    videoSrc: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
     year: 'Fall 2023',
     yearEnd: '',
     titleColor: '#fff',
@@ -155,6 +176,9 @@ const Projects = () => {
                 descColor={project.descColor}
                 yearColor={project.yearColor}
                 toolsUsed={project.toolsUsed}
+                img1={project.img1}
+                img2={project.img2}
+                videoSrc={project.videoSrc}
               />
             </div>
           )

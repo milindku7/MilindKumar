@@ -6,6 +6,7 @@ type Award = {
   name: string;
   description: string;
   html_url: string;
+  img1?: string;
   year?: number | string;
   yearEnd?: number | string;
   rangeSeparator?: string;
@@ -22,6 +23,7 @@ const awards: Award[] = [
     
     `,
     html_url: '#',
+    img1: 'http://localhost:8080/api/media/images/capen.jpg',
     year: 'August 2024',
     yearEnd: '',
     titleColor: '#000',
@@ -35,6 +37,7 @@ const awards: Award[] = [
     
     UB CSE Demo Day is an annual event that celebrates the innovative projects and research conducted by students in the Computer Science and Engineering department. It provides a platform for students to showcase their work, network with industry professionals, and gain recognition for their achievements. The event features a diverse range of projects, including software applications, hardware prototypes, research papers, and more, highlighting the creativity and technical skills of UB's CSE students.`,
     html_url: '#',
+    img1: 'http://localhost:8080/api/media/images/demoday.jpeg',
     year: 'December 2025',
     yearEnd: '',
     titleColor: '#000',
@@ -48,6 +51,7 @@ const awards: Award[] = [
     
     This honor is awarded after the fall and spring semesters.`,
     html_url: '#',
+    img1: 'http://localhost:8080/api/media/images/dean.png',
     year: '',
     yearEnd: '',
     titleColor: '#fff',
@@ -96,11 +100,13 @@ const Awards = () => {
                 year={displayYear}
                 title={award.name}
                 description={award.description}
+                img1={award.img1}
                 bgColor={awardBgColors[(award.id - 1) % awardBgColors.length]}
                 dividerColor={dividerColors[(award.id - 1) % dividerColors.length]}
                 titleColor={award.titleColor}
                 descColor={award.descColor}
                 yearColor={award.yearColor}
+                mediaVariant="exp"
               />
             </div>
           );

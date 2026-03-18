@@ -41,7 +41,7 @@
   display: grid;
   grid-template-columns: 1fr;
   /* Ensure each project starts on a new line */
-  padding-top: 2rem;
+  padding-top: 0rem;
   background-color: #ffa000;
 }
 

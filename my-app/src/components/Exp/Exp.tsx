@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Exp.module.css'
+import ScatteredMediaExp from '../Media/ScatteredMediaExp'
 
 type ExpProps = {
 	year: string | number
@@ -51,15 +52,7 @@ const Exp: React.FC<ExpProps> = ({
 			<div className={styles.contentWrapper}>
                 {/* Media Side (Flipped: First) */}
 				<div className={styles.mediaSide}>
-					<div className={`${styles.frame} ${styles.videoFrame} ${styles.tilted1}`}>
-						<div className={styles.placeholder}>Video 1</div>
-					</div>
-					<div className={`${styles.frame} ${styles.videoFrame} ${styles.tilted2}`}>
-						<div className={styles.placeholder}>Video 2</div>
-					</div>
-					<div className={`${styles.frame} ${styles.pictureFrame} ${styles.tilted3}`}>
-						<div className={styles.placeholder}>Pic 1</div>
-					</div>
+					<ScatteredMediaExp img1={img1} videoSrc={videoSrc} />
 				</div>
 
                 {/* Text Side (Flipped: Second) */}

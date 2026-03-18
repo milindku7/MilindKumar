@@ -12,6 +12,9 @@ type Experience = {
   titleColor?: string;
   descColor?: string;
   yearColor?: string;
+  img1?: string;
+  img2?: string;
+  videoSrc?: string;
 };
 
 const experiences: Experience[] = [
@@ -30,6 +33,7 @@ const experiences: Experience[] = [
     titleColor: '#000',
     descColor: '#333333',
     yearColor: '#333333',
+    img1: 'http://localhost:8080/api/media/images/Research.webp',
   },
   {
     id: 2,
@@ -46,6 +50,7 @@ const experiences: Experience[] = [
     titleColor: '#fff',
     descColor: '#f0f0f0',
     yearColor: '#f0f0f0',
+    img1: 'http://localhost:8080/api/media/images/ambassador.png',
   },
     {
     id: 3,
@@ -60,6 +65,7 @@ const experiences: Experience[] = [
     titleColor: '#000',
     descColor: '#333333',
     yearColor: '#333333',
+    img1: 'http://localhost:8080/api/media/images/STEM.jpg',
   },
 ];
 
@@ -119,6 +125,9 @@ const Experience = () => {
                 titleColor={exp.titleColor}
                 descColor={exp.descColor}
                 yearColor={exp.yearColor}
+                img1={exp.img1}
+                img2={exp.img2}
+                videoSrc={exp.videoSrc}
               />
             </div>
           )

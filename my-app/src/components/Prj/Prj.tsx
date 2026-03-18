@@ -1,10 +1,13 @@
 import React from 'react'
 import styles from './Prj.module.css'
+import ScatteredMedia from '../Media/ScatteredMedia'
+import ScatteredMediaExp from '../Media/ScatteredMediaExp'
 
 type PrjProps = {
 	year: string | number
 	title: string
 	description: string
+	toolsUsed?: string
 	img1?: string
 	img2?: string
 	videoSrc?: string
@@ -13,12 +16,14 @@ type PrjProps = {
 	titleColor?: string
 	descColor?: string
 	yearColor?: string
+	mediaVariant?: 'default' | 'exp'
 }
 
 const Prj: React.FC<PrjProps> = ({
 	year,
 	title,
 	description,
+	toolsUsed,
 	img1,
 	img2,
 	videoSrc,
@@ -26,7 +31,8 @@ const Prj: React.FC<PrjProps> = ({
 	dividerColor,
 	titleColor,
 	descColor,
-	yearColor
+	yearColor,
+	mediaVariant = 'default'
 }) => {
 	const WAVE_PATHS = [
 		"M0,64L48,96C96,128,192,192,288,186.7C384,181,480,107,576,101.3C672,96,768,160,864,176C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z",
@@ -53,17 +59,18 @@ const Prj: React.FC<PrjProps> = ({
 					<div className={styles.year} style={{ color: yearColor }}>{year}</div>
 					<div className={styles.title} style={{ color: titleColor }}>{title}</div>
 					<p className={styles.desc} style={{ color: descColor }}>{description}</p>
+					{toolsUsed ? (
+						<p className={styles.tools} style={{ color: descColor }}>
+							<strong>Tools Used:</strong> {toolsUsed}
+						</p>
+					) : null}
 				</div>
 				<div className={styles.right}>
-					<div className={`${styles.frame} ${styles.videoFrame} ${styles.tilted1}`}>
-						<div className={styles.placeholder}>Video 1</div>
-					</div>
-					<div className={`${styles.frame} ${styles.videoFrame} ${styles.tilted2}`}>
-						<div className={styles.placeholder}>Video 2</div>
-					</div>
-					<div className={`${styles.frame} ${styles.pictureFrame} ${styles.tilted3}`}>
-						<div className={styles.placeholder}>Pic 1</div>
-					</div>
+					{mediaVariant === 'exp' ? (
+						<ScatteredMediaExp img1={img1} videoSrc={videoSrc} />
+					) : (
+						<ScatteredMedia img1={img1} img2={img2} videoSrc={videoSrc} />
+					)}
 				</div>
 			</div>
 			<div className={styles.divider} aria-hidden="true" style={{ backgroundColor: dividerColor ?? '#ffffff' }}>

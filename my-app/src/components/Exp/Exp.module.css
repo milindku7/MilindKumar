@@ -18,13 +18,13 @@
 
 /* Original .left was text. Now text is on right side */
 .textSide {
-	flex: 1;
+	flex: 1.45;
 	text-align: left;
 	/* Keep text left aligned for readability usually, or maybe right? let's stick to left for now unless "flipped" implies text-align too */
 	margin-right: 10vw;
 	/* Flipped margin */
 	margin-left: 2rem;
-	max-width: 50vw;
+	max-width: 58vw;
 }
 
 .year {
@@ -73,6 +73,7 @@
 
 /* Original .right was media. Now media is on the left side */
 .mediaSide {
+	flex: 0.75;
 	display: flex;
 	gap: 1.5rem;
 	align-items: center;
@@ -82,6 +83,7 @@
 	/* Flipped alignment */
 	height: fit-content;
 	padding-right: 2rem;
+	max-width: 34vw;
 }
 
 .frame {
