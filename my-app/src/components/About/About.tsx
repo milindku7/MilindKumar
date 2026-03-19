@@ -10,7 +10,7 @@ const About = () => {
         </p>
       </div>
       <div className={styles.aboutImage}>
-        <img src='http://localhost:8080/api/media/images/mypic.jpg' alt="About Me" />
+        <img src='https://milindkumar.org/api/media/images/mypic.jpg' alt="About Me" />
       </div>
     </section>
   );

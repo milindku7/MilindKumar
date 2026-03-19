@@ -23,7 +23,7 @@ const awards: Award[] = [
     
     `,
     html_url: '#',
-    img1: 'http://localhost:8080/api/media/images/capen.jpg',
+    img1: 'https://milindkumar.org/api/media/images/capen.jpg',
     year: 'August 2024',
     yearEnd: '',
     titleColor: '#000',
@@ -37,7 +37,7 @@ const awards: Award[] = [
     
     UB CSE Demo Day is an annual event that celebrates the innovative projects and research conducted by students in the Computer Science and Engineering department. It provides a platform for students to showcase their work, network with industry professionals, and gain recognition for their achievements. The event features a diverse range of projects, including software applications, hardware prototypes, research papers, and more, highlighting the creativity and technical skills of UB's CSE students.`,
     html_url: '#',
-    img1: 'http://localhost:8080/api/media/images/demoday.jpeg',
+    img1: 'https://milindkumar.org/api/media/images/demoday.jpeg',
     year: 'December 2025',
     yearEnd: '',
     titleColor: '#000',
@@ -51,7 +51,7 @@ const awards: Award[] = [
     
     This honor is awarded after the fall and spring semesters.`,
     html_url: '#',
-    img1: 'http://localhost:8080/api/media/images/dean.png',
+    img1: 'https://milindkumar.org/api/media/images/dean.png',
     year: '',
     yearEnd: '',
     titleColor: '#fff',

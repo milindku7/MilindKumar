@@ -44,7 +44,7 @@ const Contact = () => {
           <span>GitHub</span>
         </a>
         <a
-          href="http://localhost:8080/api/pdf/Milind_Kumar.pdf"
+          href="https://milindkumar.org/api/pdf/Milind_Kumar.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.contactItem}

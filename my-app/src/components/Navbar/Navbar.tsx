@@ -54,7 +54,7 @@ export const Navbar: React.FC = () => {
         <h2 className={`${styles.fadeUp} ${styles.delay2}`}>University at Buffalo, Computer Science (BS)</h2>
         <h3 className={`${styles.fadeUp} ${styles.delay3}`}>Software Developer, UI/UX Designer, Database and AI/ML Engineer</h3>
         <a
-          href="http://localhost:8080/api/pdf/Milind_Kumar.pdf"
+          href="https://milindkumar.org/api/pdf/Milind_Kumar.pdf"
           target="_blank"
           rel="noreferrer"
           className={`${styles.resumeButton} ${styles.fadeUp} ${styles.delay4}`}

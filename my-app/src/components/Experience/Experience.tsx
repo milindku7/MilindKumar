@@ -33,7 +33,7 @@ const experiences: Experience[] = [
     titleColor: '#000',
     descColor: '#333333',
     yearColor: '#333333',
-    img1: 'http://localhost:8080/api/media/images/Research.webp',
+    img1: 'https://milindkumar.org/api/media/images/Research.webp',
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ const experiences: Experience[] = [
     titleColor: '#fff',
     descColor: '#f0f0f0',
     yearColor: '#f0f0f0',
-    img1: 'http://localhost:8080/api/media/images/ambassador.png',
+    img1: 'https://milindkumar.org/api/media/images/ambassador.png',
   },
     {
     id: 3,
@@ -65,7 +65,7 @@ const experiences: Experience[] = [
     titleColor: '#000',
     descColor: '#333333',
     yearColor: '#333333',
-    img1: 'http://localhost:8080/api/media/images/STEM.jpg',
+    img1: 'https://milindkumar.org/api/media/images/STEM.jpg',
   },
 ];
 
