@@ -146,3 +146,49 @@
   .delay4 {
     animation-delay: 400ms;
   }
+
+  @media (max-width: 768px) {
+    .navbar {
+      justify-content: flex-start;
+    }
+
+    .navContainer {
+      display: none;
+    }
+
+    .titleContainer {
+      flex: 1;
+      width: 100%;
+      text-align: left;
+      padding: 1rem 1rem 0.5rem;
+    }
+
+    .title {
+      font-size: clamp(1.35rem, 7vw, 2rem);
+      line-height: 1.2;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+    }
+
+    .titleContainer h2 {
+      font-size: clamp(0.95rem, 4.5vw, 1.2rem);
+      line-height: 1.35;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+    }
+
+    .titleContainer h3 {
+      font-size: clamp(0.8rem, 3.6vw, 1rem);
+      line-height: 1.35;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+    }
+
+    .resumeButton {
+      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+    }
+  }

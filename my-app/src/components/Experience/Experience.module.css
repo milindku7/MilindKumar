@@ -81,3 +81,15 @@
 .sectionHeader h1 {
   margin: 0;
 }
+
+@media (max-width: 900px) {
+  .sectionHeader {
+    text-align: center;
+    padding: 1.5rem 1.25rem 2rem;
+  }
+
+  .sectionHeader h1 {
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+}

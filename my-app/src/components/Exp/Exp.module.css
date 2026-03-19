@@ -25,6 +25,7 @@
 	/* Flipped margin */
 	margin-left: 2rem;
 	max-width: 58vw;
+	overflow-wrap: anywhere;
 }
 
 .year {
@@ -40,6 +41,7 @@
 	color: #000000;
 	margin-bottom: 1rem;
 	line-height: 1.1;
+	overflow-wrap: anywhere;
 }
 
 .desc {
@@ -48,6 +50,8 @@
 	line-height: 1.6;
 	font-size: 1.1rem;
 	white-space: pre-line;
+	overflow-wrap: anywhere;
+	word-break: break-word;
 }
 
 .tools {
@@ -173,13 +177,15 @@
 	.textSide {
 		margin-left: 0;
 		margin-right: 0;
-		max-width: 80%;
+		max-width: 100%;
 		margin-bottom: 2rem;
 		text-align: center;
+		padding: 0 1rem;
 	}
 
 	.mediaSide {
-		width: 100%;
+		width: 80%;
+		max-width: 80%;
 		justify-content: center;
 		margin-left: 0;
 		margin-bottom: 2rem;

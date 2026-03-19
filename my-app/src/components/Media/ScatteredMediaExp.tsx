@@ -11,54 +11,29 @@ const ScatteredMediaExp: React.FC<ScatteredMediaExpProps> = ({
   videoSrc,
 }) => {
   return (
-    // Main frame container
-    <div 
-      style={{
-        position: 'relative',
-        width: '600px',
-        maxWidth: '800px',
-        height: '400px',
-        margin: '2rem auto',
-        // Changed to visible so the scaled image doesn't get clipped by the frame
-        overflow: 'visible', 
-      }}
-    >
+    <div className="scattered-media-exp-container">
       {/* Picture */}
-      <div
-        className="media-wrapper"
-        style={{
-          position: 'absolute',
-          top: '8%',
-          left: '10%',
-          width: '300px',
-          height: '200px',
-          zIndex: 1
-        }}
+      <a
+        className="media-wrapper scattered-media-exp-image"
+        href={img1}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open image in a new tab"
       >
         <img
           src={img1}
           alt="Scattered random"
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            borderRadius: '8px'
-          }}
+          className="media-content"
         />
-      </div>
+      </a>
 
       {videoSrc ? (
-        <div
-          className="media-wrapper"
-          style={{
-            position: 'absolute',
-            top: '45%',
-            left: '52%',
-            width: '260px',
-            height: '150px',
-            transform: 'rotate(-7deg)',
-            zIndex: 2,
-          }}
+        <a
+          className="media-wrapper scattered-media-exp-video"
+          href={videoSrc}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open video in a new tab"
         >
           <video
             src={videoSrc}
@@ -66,14 +41,9 @@ const ScatteredMediaExp: React.FC<ScatteredMediaExpProps> = ({
             loop
             muted
             playsInline
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              borderRadius: '8px',
-            }}
+            className="media-content"
           />
-        </div>
+        </a>
       ) : null}
     </div>
   );

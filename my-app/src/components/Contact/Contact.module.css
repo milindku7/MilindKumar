@@ -42,7 +42,7 @@
 .contactItem svg {
   width: 22px;
   height: 22px;
-  fill: currentColor;
+  fill: #000000;
 }
 
 .contactItem:hover {

@@ -20,6 +20,7 @@
 	text-align: left;
 	margin-left: 10vw;
 	max-width: 50vw;
+	overflow-wrap: anywhere;
 }
 
 .year {
@@ -29,12 +30,59 @@
 	margin-bottom: 0.5rem;
 }
 
+.titleRow {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin-bottom: 1rem;
+	flex-wrap: wrap;
+}
+
 .title {
 	font-size: 1.7rem;
 	font-weight: 1000;
 	color: #000000;
-	margin-bottom: 1rem;
+	margin-bottom: 0;
 	line-height: 1.1;
+	overflow-wrap: anywhere;
+}
+
+.githubButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.28rem;
+	padding: 0.1rem 0.2rem;
+	line-height: 1;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: transparent;
+	border: 1px solid transparent;
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.githubButton:hover {
+	transform: translateY(-1px);
+	opacity: 0.85;
+}
+
+.githubButton:focus-visible {
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+}
+
+.githubIcon {
+	width: 1.08rem;
+	height: 1.08rem;
+	display: block;
+}
+
+.redirectIcon {
+	width: 0.86rem;
+	height: 0.86rem;
+	display: block;
+	opacity: 0.95;
 }
 
 .desc {
@@ -43,6 +91,8 @@
 	line-height: 1.6;
 	font-size: 1.1rem;
 	white-space: pre-line;
+	overflow-wrap: anywhere;
+	word-break: break-word;
 }
 
 .tools {
@@ -51,6 +101,7 @@
 	line-height: 1.6;
 	font-size: 1rem;
 	font-style: italic;
+	overflow-wrap: anywhere;
 }
 
 .divider {
@@ -163,16 +214,20 @@
 
 	.left {
 		margin-left: 0;
-		margin-right: 0;
-		max-width: 80%;
+		
+		max-width: 100%;
 		margin-bottom: 2rem;
 		text-align: center;
+		padding: 0 1rem;
+	}
+
+	.titleRow {
+		justify-content: center;
 	}
 
 	.right {
 		width: 100%;
 		justify-content: center;
-		margin-right: 0;
-		margin-bottom: 2rem;
+		padding-left: 0rem;
 	}
 }

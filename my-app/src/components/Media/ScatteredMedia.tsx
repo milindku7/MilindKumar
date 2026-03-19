@@ -5,86 +5,55 @@ type ScatteredMediaProps = {
   img1?: string;
   img2?: string;
   videoSrc?: string;
+  videoImageSrc?: string;
 };
 
 const ScatteredMedia: React.FC<ScatteredMediaProps> = ({
   img1 = 'https://picsum.photos/seed/project-1/300/200',
   img2 = 'https://picsum.photos/seed/project-2/300/200',
   videoSrc = 'https://www.w3schools.com/html/mov_bbb.mp4',
+  videoImageSrc,
 }) => {
+  const videoLink = videoSrc || videoImageSrc;
+
   return (
-    <div
-      style={{
-        position: 'relative',
-        width: '600px',
-        maxWidth: '800px',
-        height: '400px',
-        margin: '2rem auto',
-        overflow: 'visible',
-      }}
-    >
+    <div className="scattered-media-container">
       {/* Image 1 */}
-      <div
-        className="media-wrapper"
-        style={{
-          position: 'absolute',
-          top: '8%',
-          left: '10%',
-          width: '300px',
-          height: '200px',
-          transform: 'rotate(-12deg)',
-          zIndex: 1,
-        }}
+      <a
+        className="media-wrapper media-item media-item-image-1"
+        href={img1}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open image in a new tab"
       >
-        <img
-          src={img1}
-          alt="Scattered random 1"
-          style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }}
-        />
-      </div>
+        <img src={img1} alt="Scattered random 1" className="media-content" />
+      </a>
 
       {/* Video 1 */}
-      <div
-        className="media-wrapper"
-        style={{
-          position: 'absolute',
-          top: '47%',
-          left: '15%',
-          width: '320px',
-          height: '180px', // Added an explicit height so the wrapper matches the video
-          transform: 'rotate(8deg)',
-          zIndex: 2,
-        }}
+      <a
+        className="media-wrapper media-item media-item-video"
+        href={videoLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open video in a new tab"
       >
-        <video
-          src={videoSrc}
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }}
-        />
-      </div>
+        {videoImageSrc ? (
+          <img src={videoImageSrc} alt="Project preview" className="media-content" />
+        ) : (
+          <video src={videoSrc} autoPlay loop muted playsInline className="media-content" />
+        )}
+      </a>
 
       {/* Image 2 */}
-      <div
-        className="media-wrapper media-wrapper-no-frame"
-        style={{
-          position: 'absolute',
-          top: '25%',
-          left: '55%',
-          width: '200px',
-          height: '200px',
-          transform: 'rotate(-6deg)',
-          zIndex: 3,
-        }}
+      <a
+        className="media-wrapper media-wrapper-no-frame media-item media-item-image-2"
+        href={img2}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open image in a new tab"
       >
-        <img
-          src={img2}
-          alt="Scattered random 2"
-          style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }}
-        />
-      </div>
+        <img src={img2} alt="Scattered random 2" className="media-content" />
+      </a>
     </div>
   );
 };
