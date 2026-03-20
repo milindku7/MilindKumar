@@ -122,7 +122,7 @@
   transform: rotate(-7deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .scattered-media-container {
     position: static;
     width: min(95vw, 420px);

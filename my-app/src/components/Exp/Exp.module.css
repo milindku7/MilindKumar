@@ -165,7 +165,7 @@
 	z-index: 10;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 	.contentWrapper {
 		flex-direction: column-reverse;
 		/* Flip stacking order on mobile too? */

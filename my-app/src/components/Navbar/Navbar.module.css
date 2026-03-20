@@ -104,7 +104,7 @@
     font-weight: bold;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 500px) {
     .headerLink {
       padding-left: 1rem;
     }
@@ -147,7 +147,7 @@
     animation-delay: 400ms;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .navbar {
       justify-content: flex-start;
     }

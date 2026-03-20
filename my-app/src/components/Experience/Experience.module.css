@@ -82,7 +82,7 @@
   margin: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .sectionHeader {
     text-align: center;
     padding: 1.5rem 1.25rem 2rem;
