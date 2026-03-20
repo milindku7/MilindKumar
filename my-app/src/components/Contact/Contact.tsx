@@ -7,7 +7,7 @@ const Contact = () => {
       <p>Please reach out through any of the platforms below for opportunities and collaborations. And check out my github! :)</p>
       <div className={styles.contactInfo}>
         <a
-          href="mailto:milindsa@buffalo.edu"
+          href="mailto:milindku@buffalo.edu"
           className={styles.contactItem}
           aria-label="Send email to Milind"
           title="Email"
@@ -18,7 +18,7 @@ const Contact = () => {
           <span>Email</span>
         </a>
         <a
-          href="https://www.linkedin.com/in/milind-kumar-01/"
+          href="https://www.linkedin.com/in/milind7kumar/"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.contactItem}
@@ -31,7 +31,7 @@ const Contact = () => {
           <span>LinkedIn</span>
         </a>
         <a
-          href="https://github.com/Milind-Kumar-01"
+          href="https://github.com/milindku7"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.contactItem}
