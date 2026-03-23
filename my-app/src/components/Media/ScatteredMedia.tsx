@@ -14,7 +14,6 @@ const ScatteredMedia: React.FC<ScatteredMediaProps> = ({
   videoSrc = 'https://www.w3schools.com/html/mov_bbb.mp4',
   videoImageSrc,
 }) => {
-  const videoLink = videoSrc || videoImageSrc;
 
   return (
     <div className="scattered-media-container">
@@ -32,7 +31,7 @@ const ScatteredMedia: React.FC<ScatteredMediaProps> = ({
       {/* Video 1 */}
       <a
         className="media-wrapper media-item media-item-video"
-        href={videoLink}
+        href={videoImageSrc || videoSrc}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Open video in a new tab"
