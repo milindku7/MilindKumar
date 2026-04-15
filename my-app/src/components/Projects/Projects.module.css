@@ -18,10 +18,10 @@
 .waveSvg {
   display: block;
   width: 100%;
-  max-height: 120px;
-  height: 120px;
+  height: auto;      /* Changed from fixed 120px */
+  min-height: 50px;  /* Keeps the wave visible on tiny screens */
   position: relative;
-  top: -2.5rem;
+  top: -1px;         /* Changed from -2.5rem to prevent it from overlapping too much on mobile */
 }
 
 .waveTitle {
@@ -82,7 +82,7 @@
   margin: 0;
   padding: 1rem;
   padding-top: 2rem;
-  padding-left: 10rem;
+  padding-left: 10vw; /* Changed from 10rem to match the cards perfectly */
 }
 
 @media (max-width: 1000px) {

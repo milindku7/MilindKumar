@@ -39,20 +39,20 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    name: 'Scheduling Algorithm',
-    description: `I built a Python-based engine to solve the weekly headache of scheduling for an 18-person team.
-     By treating the schedule as an algorithmic constraint satisfaction problem (inspired by my work in Algorithms and Complexity), I reduced a manual 4-hour process down to a few seconds.
-     The result? 100% shift coverage, zero human errors, and a "fairness" logic that actually respected everyone's preferences.`,
-    html_url: 'https://github.com/milindku7/schedule.git',
-    img1: 'https://milindkumar.org/api/media/images/schedule1.png',
-    img2: 'https://milindkumar.org/api/media/images/schedulingalgo.png',
-    videoSrc: 'https://milindkumar.org/api/media/images/schedule2.mp4',
+    name: 'Yoga Pose Corrector',
+    description: `A playful AI-assisted fitness app that gives real-time posture feedback while users move through yoga routines.
+
+    I built it to make at-home practice feel a little more guided and a lot less guessy, with simple pose detection cues, a clean interface, and feedback designed to help users improve alignment over time.`,
+    html_url: 'https://github.com/milindku7/yoga-pose-corrector',
+    img1: 'http://127.0.0.1:8080/api/media/images/yogademo.png',
+    img2: 'http://127.0.0.1:8080/api/media/images/yoga.png',
+    videoSrc: 'https://milindkumar.org/api/media/images/CA.mp4',
     year: 'Side Project',
     yearEnd: '',
     titleColor: '#000',
     descColor: '#333333',
     yearColor: '#333333',
-    toolsUsed: 'Python, Algorithms',
+    toolsUsed: 'React, Computer Vision, Python, OpenCV',
   },
   {
     id: 3,
@@ -88,20 +88,20 @@ As the lead on the frontend, I took ownership of the UI, turning concepts into a
   },
     {
     id: 5,
-    name: 'Ascenture: An Adventure Based, Mountain Climbing Game',
-    description: `In this Unreal Engine puzzle adventure, size really matters!
-    
-    You play as a mouse and a dragon who must team up to climb a mysterious mountain. You’ll need the mouse’s agility and the dragon’s strength to clear the path ahead. I built this using a mix of C++ and Blueprints to create smooth character switching and dynamic puzzle mechanics. It’s a fun test of logic and teamwork.`,
-    html_url: 'https://github.com/cse442-at-ub/sp25-repo-esc.git',
-    img1: 'https://milindkumar.org/api/media/images/ascenture1.png',
-    img2: 'https://milindkumar.org/api/media/images/ascenture.png',
-    videoImageSrc: 'https://milindkumar.org/api/media/images/ascenture2.png',
-    year: 'Spring 2025',
+    name: 'Scheduling Algorithm',
+    description: `I built a Python-based engine to solve the weekly headache of scheduling for an 18-person team.
+     By treating the schedule as an algorithmic constraint satisfaction problem (inspired by my work in Algorithms and Complexity), I reduced a manual 4-hour process down to a few seconds.
+     The result? 100% shift coverage, zero human errors, and a "fairness" logic that actually respected everyone's preferences.`,
+    html_url: 'https://github.com/milindku7/schedule.git',
+    img1: 'https://milindkumar.org/api/media/images/schedule1.png',
+    img2: 'https://milindkumar.org/api/media/images/schedulingalgo.png',
+    videoSrc: 'https://milindkumar.org/api/media/images/schedule2.mp4',
+    year: 'Side Project',
     yearEnd: '',
     titleColor: '#000',
     descColor: '#333333',
     yearColor: '#333333',
-    toolsUsed: 'C++, Unreal Engine, Blueprints',
+    toolsUsed: 'Python, Algorithms',
   },
     {
     id: 6,
