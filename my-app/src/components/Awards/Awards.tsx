@@ -51,7 +51,7 @@ const awards: Award[] = [
     
     This honor is awarded after the fall and spring semesters.`,
     html_url: '#',
-    img1: 'https://milindkumar.org/api/media/images/dean.png',
+    img1: 'http://127.0.0.1:8080/api/media/images/dean.png',
     year: '',
     yearEnd: '',
     titleColor: '#fff',

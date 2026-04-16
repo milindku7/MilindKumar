@@ -127,6 +127,7 @@
 	justify-content: flex-end;
 	height: fit-content;
 	padding-left: 2rem;
+	padding-right: 4rem;
 }
 
 .frame {
@@ -229,5 +230,6 @@
 		width: 100%;
 		justify-content: center;
 		padding-left: 0rem;
+		padding-right: 0rem;
 	}
 }

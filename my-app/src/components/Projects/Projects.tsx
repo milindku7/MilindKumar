@@ -46,7 +46,6 @@ const projects: Project[] = [
     html_url: 'https://github.com/milindku7/yoga-pose-corrector',
     img1: 'http://127.0.0.1:8080/api/media/images/yogademo.png',
     img2: 'http://127.0.0.1:8080/api/media/images/yoga.png',
-    videoSrc: 'https://milindkumar.org/api/media/images/CA.mp4',
     year: 'Side Project',
     yearEnd: '',
     titleColor: '#000',
