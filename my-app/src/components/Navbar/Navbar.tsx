@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.css";
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 const HeaderCurve = ({ className = "" }) => {
   return (
@@ -35,11 +36,11 @@ const HeaderCurve = ({ className = "" }) => {
         }}
       >
         <nav aria-label="Header links" className={styles.headerLinks}>
-          <a href="#awards" className={styles.headerLink}>Awards</a>
-          <a href="#experience" className={styles.headerLink}>Experience</a>
-          <a href="#projects" className={styles.headerLink}>Projects</a>
-          <a href="#contact" className={styles.headerLink}>Contact</a>
-          <a href="#about" className={styles.headerLink}>About</a>
+          <a href="/#awards" className={styles.headerLink}>Awards</a>
+          <a href="/#experience" className={styles.headerLink}>Experience</a>
+          <a href="/#projects" className={styles.headerLink}>Projects</a>
+          <a href="/#contact" className={styles.headerLink}>Contact</a>
+          <a href="/#about" className={styles.headerLink}>About</a>
         </nav>
       </div>
     </div>
@@ -61,6 +62,13 @@ export const Navbar: React.FC = () => {
         >
           Browse my resume
         </a>
+        <br />
+        <Link
+          to="/try-projects"
+          className={`${styles.projectButton} ${styles.fadeUp} ${styles.delay5}`}
+        >
+          Try out my projects!
+        </Link>
       </div>
       <div className={styles.navContainer}>
         <HeaderCurve />

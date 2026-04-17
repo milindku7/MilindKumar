@@ -104,6 +104,42 @@
 	overflow-wrap: anywhere;
 }
 
+.techStackSection {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.techStackLabel {
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.techStackLink {
+	display: inline-flex;
+	max-width: min(420px, 100%);
+	text-decoration: none;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.techStackLink:focus-visible {
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+}
+
+.techStackImage {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	max-width: 250px;
+}
+
 .divider {
 	width: 100%;
 	background-color: transparent;
@@ -224,6 +260,10 @@
 
 	.titleRow {
 		justify-content: center;
+	}
+
+	.techStackSection {
+		align-items: center;
 	}
 
 	.right {

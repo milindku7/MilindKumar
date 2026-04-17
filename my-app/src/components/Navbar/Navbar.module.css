@@ -73,6 +73,30 @@
     outline: 3px solid #111111;
     outline-offset: 2px;
   }
+
+  .projectButton {
+    display: inline-block;
+    margin-top: 0.3rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    background-color: #ffdab9;
+    color: #000000;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+  }
+
+  .projectButton:hover {
+    background-color: #ffb703;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  .projectButton:focus-visible {
+    outline: 3px solid #111111;
+    outline-offset: 2px;
+  }
   
   .navContainer {
     flex: 1;
@@ -147,6 +171,10 @@
     animation-delay: 400ms;
   }
 
+  .delay5 {
+    animation-delay: 500ms;
+  }
+
   @media (max-width: 1000px) {
     .navbar {
       justify-content: flex-start;
@@ -188,6 +216,10 @@
     }
 
     .resumeButton {
+      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+    }
+    .projectButton {
       font-size: 0.85rem;
       padding: 0.6rem 1rem;
     }

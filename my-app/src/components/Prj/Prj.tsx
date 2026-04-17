@@ -99,6 +99,24 @@ const Prj: React.FC<PrjProps> = ({
 						) : null}
 					</div>
 					<p className={styles.desc} style={{ color: descColor }}>{description}</p>
+					{img2 ? (
+						<div className={styles.techStackSection}>
+							<span className={styles.techStackLabel}>Built With</span>
+							<a
+								className={styles.techStackLink}
+								href={img2}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label={`Open tools used image for ${title}`}
+							>
+								<img
+									src={img2}
+									alt="Programming languages and tools used"
+									className={styles.techStackImage}
+								/>
+							</a>
+						</div>
+					) : null}
 					{toolsUsed ? (
 						<p className={styles.tools} style={{ color: descColor }}>
 							<strong>Tools Used:</strong> {toolsUsed}
@@ -109,7 +127,7 @@ const Prj: React.FC<PrjProps> = ({
 					{mediaVariant === 'exp' ? (
 						<ScatteredMediaExp img1={img1} videoSrc={videoSrc} />
 					) : (
-						<ScatteredMedia img1={img1} img2={img2} videoSrc={videoSrc} videoImageSrc={videoImageSrc} />
+						<ScatteredMedia img1={img1} videoSrc={videoSrc} videoImageSrc={videoImageSrc} />
 					)}
 				</div>
 			</div>
